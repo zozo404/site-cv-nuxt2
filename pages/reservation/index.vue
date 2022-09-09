@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1>Réservation</h1>
+    <h1 class="text-center">
+      Réservation
+    </h1>
     <ReservationCard :services="getServices" />
   </div>
 </template>
