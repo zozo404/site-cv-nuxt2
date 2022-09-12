@@ -43,7 +43,7 @@ export const actions = {
 
     const editors = await $axios.$get('https://byaeh17d.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "editors"]{name,"imageUrl":image{asset},_id,link}')
 
-    const services = await $axios.$get('https://byaeh17d.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "services"]{name,"imageUrl":image{asset},_id,slug,text}')
+    const services = await $axios.$get('https://byaeh17d.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "services"]{name,"imageUrl":image{asset},_id,slug,text,url}')
 
     await dispatch('setGames', games.result)
     await dispatch('setPages', pages.result)
