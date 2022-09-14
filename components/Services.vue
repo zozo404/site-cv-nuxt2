@@ -117,7 +117,7 @@
                     <div class="mt-8">
                       <div class="rounded-lg shadow-md">
                         <a
-                          href="#"
+                          href="../reservation.html"
                           class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-700 hover:bg-gray-50"
                           aria-describedby="tier-hobby"
                         >
@@ -379,7 +379,7 @@
                     <div class="mt-8">
                       <div class="rounded-lg shadow-md">
                         <a
-                          href="reservation-simply.html"
+                          href="../reservation.html"
                           class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-700 hover:bg-gray-50"
                           aria-describedby="tier-scale"
                         >
