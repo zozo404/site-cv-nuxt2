@@ -14,7 +14,9 @@
       <div class="mt-4 px-5 flex flex-col text-center w-1/2">
         <div class="flex justify-center space-x-4">
           <span class="inline-flex items-center rounded-full bg-gray-100 px-3 py-0.5 text-sm font-medium text-gray-800">{{ game.players }}</span>
-          <span class="inline-flex items-center rounded-full bg-red-100 px-3 py-0.5 text-sm font-medium text-red-800">{{ game.difficulty }}</span>
+          <span v-if="game.difficulty == 'easy'" class="inline-flex items-center rounded-full bg-green-100 px-3 py-0.5 text-sm font-medium text-green-800">{{ game.difficulty }}</span>
+          <span v-if="game.difficulty == 'medium'" class="inline-flex items-center rounded-full bg-yellow-100 px-3 py-0.5 text-sm font-medium text-yellow-800">{{ game.difficulty }}</span>
+          <span v-if="game.difficulty == 'hard'" class="inline-flex items-center rounded-full bg-red-100 px-3 py-0.5 text-sm font-medium text-red-800">{{ game.difficulty }}</span>
         </div>
         <p class="mt-8">
           {{ game.text }}
