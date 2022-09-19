@@ -1,6 +1,31 @@
 <template>
   <div>
     <div class="flex flex-col items-center mt-10 gap-4">
+      <nuxt-link v-if="game.editor.name == 'Ubisoft'" to="/#escape">
+        <h1 class="pl-2 py-3">
+          Retour
+        </h1>
+      </nuxt-link>
+      <nuxt-link v-if="game.editor.name == 'Arvi'" to="/#arvi">
+        <h1 class="pl-2 py-3">
+          Retour
+        </h1>
+      </nuxt-link>
+      <nuxt-link v-if="game.editor.name == 'Wanadev'" to="/#arcade">
+        <h1 class="pl-2 py-3">
+          Retour
+        </h1>
+      </nuxt-link>
+      <nuxt-link v-if="game.editor.name == 'Synthesys'" to="/#synthesys">
+        <h1 class="pl-2 py-3">
+          Retour
+        </h1>
+      </nuxt-link>
+      <nuxt-link v-if="game.editor.name == 'LDLC Studio VR'" to="/#ldlc">
+        <h1 class="pl-2 py-3">
+          Retour
+        </h1>
+      </nuxt-link>
       <Titles :title="game.name" />
       <iframe
         class="w-5/6 h-96 xl:w-1/2 border-2 border-pink-500 rounded-xl"
