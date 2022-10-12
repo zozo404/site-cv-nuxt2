@@ -62,13 +62,13 @@ export default {
   build: {
   },
   sanity: {
-    projectId: 'byaeh17d',
+    projectId: '5xe4ems3',
     minimal: true
   },
   tailwindcss: {},
   image: {
     sanity: {
-      projectId: 'byaeh17d'
+      projectId: '5xe4ems3'
     }
   }
 }

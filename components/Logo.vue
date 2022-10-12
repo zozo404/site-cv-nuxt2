@@ -4,8 +4,8 @@
     <nuxt-img
       provider="sanity"
       :src="Logo.imageId.asset._ref"
-      alt="logo vr café"
-      class="h-full"
+      alt="logo zozoy"
+      class="h-40"
       sizes="xs:100vw"
     />
   </nuxt-link>
@@ -17,7 +17,7 @@ export default {
   computed: {
     ...mapGetters(['getPages']),
     Logo () {
-      return this.getPages.find(el => el.name === 'Logo')
+      return this.getPages.find(el => el.name === 'Image de moi')
     }
   }
 }
