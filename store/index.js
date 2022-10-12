@@ -51,7 +51,7 @@ export const actions = {
     await dispatch('setPortfolio', portfolio.result)
   },
   setStages ({ commit }, stages) {
-    commit('SET_STAGE', stages)
+    commit('SET_STAGES', stages)
   },
   setPages ({ commit }, pages) {
     commit('SET_PAGES', pages)
