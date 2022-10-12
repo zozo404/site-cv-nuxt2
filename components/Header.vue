@@ -94,20 +94,28 @@ export default {
           lien: '/'
         },
         {
-          texte: 'Tarifs',
-          lien: '/#price'
+          texte: 'Présentation',
+          lien: '/#presentation'
         },
         {
-          texte: 'Services',
-          lien: '/#services'
+          texte: 'Compétences',
+          lien: '/#competences'
         },
         {
-          texte: 'Escape',
-          lien: '/#escape'
+          texte: 'Parcours',
+          lien: '/#Parcours'
         },
         {
-          texte: 'Arcade',
-          lien: '/#arcade'
+          texte: 'Expériences',
+          lien: '/#experiences'
+        },
+        {
+          texte: 'Portfolio',
+          lien: '/#portfolio'
+        },
+        {
+          texte: 'Contact',
+          lien: '/#contact'
         }
       ]
     }
