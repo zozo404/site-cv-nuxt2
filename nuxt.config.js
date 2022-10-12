@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'site-cv-nuxt2',
+    title: 'vr-cafe-nuxt2',
     htmlAttrs: {
       lang: 'fr'
     },
