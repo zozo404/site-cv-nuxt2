@@ -1,12 +1,13 @@
 <template>
   <div>
-    <nuxt-img
+    <!-- mettre img -->
+    <!-- <nuxt-img
       provider="sanity"
       class="text-center"
       :src="LandingImage.imageId.asset._ref"
       alt="VR headset"
       sizes="xs:100vw lg:100vw xl:100vw"
-    />
+    /> -->
   </div>
 </template>
 

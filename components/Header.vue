@@ -7,24 +7,17 @@
       <!-- logo -->
       <nuxt-link to="/" class="flex justify-center lg:col-span-1 h-full">
         <span class="sr-only">Logo</span>
-        <nuxt-img
+        <!-- mettre img -->
+        <!-- <nuxt-img
           provider="sanity"
           :src="Logo.imageId.asset._ref"
           alt="logo vr café"
           class="h-full"
           sizes="xs:100vw"
-        />
+        /> -->
       </nuxt-link>
       <div class="text-right pr-8 lg:hidden flex justify-end " @click="toggle">
         <i class="fas fa-bars h-8 w-8" />
-      </div>
-      <div class=" hidden lg:flex justify-center lg:col-start-3">
-        <a
-          href="../reservation.html"
-          class="inline-block bg-white py-2 px-4 border border-transparent rounded-md text-base lg:text-2xl font-medium text-indigo-700 hover:bg-indigo-50"
-        >
-          Réserver
-        </a>
       </div>
       <!-- navigation -->
       <div
@@ -49,13 +42,14 @@
         <!-- logo -->
         <nuxt-link to="/" class="flex justify-center lg:col-span-1 h-full ">
           <span class="sr-only">Logo</span>
-          <nuxt-img
+          <!-- mettre img -->
+          <!-- <nuxt-img
             provider="sanity"
             :src="Logo.imageId.asset._ref"
             alt="logo vr café"
             class="h-full"
             sizes="xs:100vw"
-          />
+          /> -->
         </nuxt-link>
         <!-- hamburger icon -->
         <div class="w-full h-full pr-8 lg:hidden flex justify-end " @click="toggle">

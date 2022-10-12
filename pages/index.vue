@@ -1,8 +1,7 @@
 <template>
   <div>
     <LandingImage />
-    <Tarif />
-    <Services />
+    <DescriptionMe />
     <Titles :id="'escape'" class="scroll-mt-40" title="ESCAPE GAME VR" subtitle="UBISOFT" />
     <Card :games="Ubisoft" />
     <Titles :id="'arvi'" title="ESCAPE GAME VR (EXCLU)" subtitle="ARVI VR" />
