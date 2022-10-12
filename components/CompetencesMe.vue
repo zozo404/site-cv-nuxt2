@@ -1,0 +1,30 @@
+<template>
+  <div>
+    <p class="text-center pb-3">
+      Voici toutes les technologies avec lesquelles j'ai pu travailler
+    </p>
+    <div class="flex content-center flex-wrap gap-8 items-center">
+      <nuxt-img
+        v-for="skill in skills"
+        :key="skill._id"
+        provider="sanity"
+        :src="skill.imageUrl.asset._ref"
+        placeholder
+        class="w-16 h-auto"
+      />
+    </div>
+  </div>
+</template>
+
+<script>
+
+export default {
+  name: 'CompetencesMe',
+  props: {
+    skills: {
+      default: null,
+      type: Array
+    }
+  }
+}
+</script>

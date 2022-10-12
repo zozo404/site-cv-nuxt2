@@ -41,7 +41,7 @@ export const actions = {
 
     const pages = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "Pages"]{name,"imageId":image{asset},titre,text}')
 
-    const skills = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "skills"]{name,text,"imageUrl": image{asset},editor->{name},slug{current},youtube,players,difficulty}')
+    const skills = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "skills"]{name,"imageUrl": image{asset}}')
 
     const portfolio = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "portfolio"]{name,"imageUrl":image{asset},_id,link}')
 
