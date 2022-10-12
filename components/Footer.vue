@@ -9,7 +9,7 @@
         </a>
       </div>
       <p class="mt-8 text-center text-base text-gray-400">
-        &copy; 2022 Sandro Das Neves, Inc. All rights reserved.
+        &copy; 2022 zozoy, Inc. All rights reserved.
       </p>
     </div>
   </footer>
@@ -23,14 +23,24 @@ export default {
       navigation: {
         social: [
           {
-            name: 'Facebook',
-            href: 'https://www.facebook.com/vrcafe66/',
-            icon: 'fab fa-facebook'
+            name: 'Twitter',
+            href: 'https://twitter.com/zozoy66',
+            icon: 'fab fa-twitter'
           },
           {
             name: 'Instagram',
-            href: 'https://www.instagram.com/vrcafe_66/',
+            href: 'https://www.instagram.com/zozoy_fr/',
             icon: 'fab fa-instagram'
+          },
+          {
+            name: 'Discord',
+            href: 'https://discord.com/invite/enzo66#9786',
+            icon: 'fab fa-discord'
+          },
+          {
+            name: 'LinkedIn',
+            href: 'https://www.linkedin.com/in/enzo-cuny/',
+            icon: 'fab fa-linkedin'
           }
 
         ]
