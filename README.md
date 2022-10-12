@@ -1,4 +1,4 @@
-# vr-cafe-nuxt2
+# site-cv-nuxt2
 
 ## Build Setup
 
