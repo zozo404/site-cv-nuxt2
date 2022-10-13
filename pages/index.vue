@@ -8,6 +8,7 @@
     <Titles :id="'parcours'" class="scroll-mt-40" subtitle="Parcours" />
     <ParcoursMe :parcours="Parcours" />
     <Titles :id="'experiences'" subtitle="Expériences" />
+    <ExperienceMe :exps="Stages" />
     <Titles :id="'portfolio'" subtitle="Portfolio" />
     <Titles :id="'contact'" subtitle="Contact" />
   </div>
@@ -19,12 +20,15 @@ import { mapGetters } from 'vuex'
 export default {
   name: 'IndexPage',
   computed: {
-    ...mapGetters(['getSkills', 'getParcours']),
+    ...mapGetters(['getSkills', 'getParcours', 'getStages']),
     Skills () {
       return this.getSkills
     },
     Parcours () {
       return this.getParcours
+    },
+    Stages () {
+      return this.getStages
     }
   }
 }

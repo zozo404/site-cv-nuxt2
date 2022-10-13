@@ -44,7 +44,7 @@ export const mutations = {
 
 export const actions = {
   async nuxtServerInit ({ dispatch }, { $axios }) {
-    const stages = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "stages"]{name,"imageUrl":image{asset},_id,link}')
+    const stages = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "stages"]{name,"imageId":image{asset}, link, year, location,theme}')
 
     const pages = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "Pages"]{name,"imageId":image{asset},titre,text}')
 
