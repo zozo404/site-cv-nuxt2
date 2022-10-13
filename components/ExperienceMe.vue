@@ -8,7 +8,7 @@
             :src="exp.imageId.asset._ref"
             provider="sanity"
             placeholder
-            class="w-12 rounded-full py-2"
+            class="w-12 py-2"
           />
         </a>
         <p>{{ exp.name }}</p>

@@ -10,6 +10,7 @@
     <Titles :id="'experiences'" subtitle="Expériences" />
     <ExperienceMe :exps="Stages" />
     <Titles :id="'portfolio'" subtitle="Portfolio" />
+    <PortfolioCard :works="Portfolio" />
     <Titles :id="'contact'" subtitle="Contact" />
   </div>
 </template>
@@ -20,7 +21,7 @@ import { mapGetters } from 'vuex'
 export default {
   name: 'IndexPage',
   computed: {
-    ...mapGetters(['getSkills', 'getParcours', 'getStages']),
+    ...mapGetters(['getSkills', 'getParcours', 'getStages', 'getPortfolio']),
     Skills () {
       return this.getSkills
     },
@@ -29,6 +30,9 @@ export default {
     },
     Stages () {
       return this.getStages
+    },
+    Portfolio () {
+      return this.getPortfolio
     }
   }
 }

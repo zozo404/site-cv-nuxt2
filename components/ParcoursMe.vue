@@ -5,8 +5,8 @@
         <div class="flex flex-col md:grid grid-cols-12 text-gray-50">
           <!-- for ici -->
           <div
-            v-for="parcour in parcours"
-            :key="parcour._id"
+            v-for="park in parcours"
+            :key="park in parcours"
             class="flex md:contents"
           >
             <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
@@ -22,7 +22,7 @@
                 {{ parcour.name }}
               </h3>
               <p class="leading-tight text-justify w-full">
-                {{ parcour.date }}
+                {{ parcour.year }}
               </p>
             </div>
           </div>
