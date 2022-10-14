@@ -11,9 +11,9 @@
           >
             <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
               <div class="h-full w-6 flex items-center justify-center">
-                <div class="h-full w-1 border border-1 border-pink-400 bg-pink-400 rounded-xl pointer-events-none" />
+                <div class="h-full w-1 border border-1 border-pink-400 bg-pink-400 pointer-events-none" />
               </div>
-              <div class="w-6 h-6 absolute top-1/2 -mt-3  border border-1 border-pink-400 bg-pink-800 rounded-xl shadow text-center">
+              <div class="w-6 h-6 absolute top-1/2 -mt-3  border border-1 border-pink-400 bg-pink-800 rounded-xl shadow text-center flex items-center justify-center">
                 <i class="fas fa-check-circle text-white" />
               </div>
             </div>
