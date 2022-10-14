@@ -5,8 +5,8 @@
         <div class="flex flex-col md:grid grid-cols-12 text-gray-50">
           <!-- for ici -->
           <div
-            v-for="park in parcours"
-            :key="park in parcours"
+            v-for="park in parks"
+            :key="park in parks"
             class="flex md:contents"
           >
             <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
@@ -19,10 +19,10 @@
             </div>
             <div class="border border-1 border-pink-400 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
               <h3 class="font-semibold text-lg mb-1">
-                {{ parcour.name }}
+                {{ park.name }}
               </h3>
               <p class="leading-tight text-justify w-full">
-                {{ parcour.year }}
+                {{ park.year }}
               </p>
             </div>
           </div>
@@ -37,7 +37,7 @@
 export default {
   name: 'ParcoursMe',
   props: {
-    parcours: {
+    parks: {
       default: null,
       type: Array
     }

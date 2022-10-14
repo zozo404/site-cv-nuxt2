@@ -8,13 +8,13 @@
       <nuxt-link to="/" class="flex justify-center lg:col-span-1 h-full">
         <span class="sr-only">Logo</span>
         <!-- mettre img -->
-        <!-- <nuxt-img
+        <nuxt-img
           provider="sanity"
           :src="Logo.imageId.asset._ref"
-          alt="logo vr café"
+          alt="logo"
           class="h-full"
           sizes="xs:100vw"
-        /> -->
+        />
       </nuxt-link>
       <div class="text-right pr-8 lg:hidden flex justify-end " @click="toggle">
         <i class="fas fa-bars h-8 w-8" />
@@ -43,13 +43,13 @@
         <nuxt-link to="/" class="flex justify-center lg:col-span-1 h-full ">
           <span class="sr-only">Logo</span>
           <!-- mettre img -->
-          <!-- <nuxt-img
+          <nuxt-img
             provider="sanity"
             :src="Logo.imageId.asset._ref"
-            alt="logo vr café"
+            alt="logo"
             class="h-full"
             sizes="xs:100vw"
-          /> -->
+          />
         </nuxt-link>
         <!-- hamburger icon -->
         <div class="w-full h-full pr-8 lg:hidden flex justify-end " @click="toggle">
@@ -95,7 +95,7 @@ export default {
         },
         {
           texte: 'Parcours',
-          lien: '/#Parcours'
+          lien: '/#parcours'
         },
         {
           texte: 'Expériences',
