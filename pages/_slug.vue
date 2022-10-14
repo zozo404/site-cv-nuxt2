@@ -11,17 +11,23 @@
         provider="sanity"
         :src="portfolio.imageUrl.asset._ref"
         placeholder
-        class="h-52 w-full"
+        class="w-full h-full sm:w-1/2 rounded-md border-2 border-orange-600"
       />
       <div class="mt-4 px-5 flex flex-col text-center w-1/2">
         <div class="flex justify-center space-x-4">
-          <span v-if="portfolio.difficulty == 'easy'" class="inline-flex items-center rounded-full bg-green-100 px-3 py-0.5 text-sm font-medium text-green-800">{{ portfolio.difficulty }}</span>
-          <span v-if="portfolio.difficulty == 'medium'" class="inline-flex items-center rounded-full bg-yellow-100 px-3 py-0.5 text-sm font-medium text-yellow-800">{{ portfolio.difficulty }}</span>
-          <span v-if="portfolio.difficulty == 'hard'" class="inline-flex items-center rounded-full bg-red-100 px-3 py-0.5 text-sm font-medium text-red-800">{{ portfolio.difficulty }}</span>
+          Difficulté du projet:
+          <span v-if="portfolio.difficulty == 'easy'" class="inline-flex items-center rounded-full bg-green-100 px-3 py-0.5 text-sm font-medium text-green-800 ml-1">{{ portfolio.difficulty }}</span>
+          <span v-if="portfolio.difficulty == 'medium'" class="inline-flex items-center rounded-full bg-yellow-100 px-3 py-0.5 text-sm font-medium text-yellow-800 ml-1">{{ portfolio.difficulty }}</span>
+          <span v-if="portfolio.difficulty == 'hard'" class="inline-flex items-center rounded-full bg-red-100 px-3 py-0.5 text-sm font-medium text-red-800 ml-1">{{ portfolio.difficulty }}</span>
         </div>
-        <p class="mt-8">
+        <p class="my-8">
           {{ portfolio.text }}
         </p>
+        <div v-if="portfolio.stages.name != null">
+          <p>
+            Le stage a été réalisé chez: {{ portfolio.stages.name }}
+          </p>
+        </div>
       </div>
     </div>
   </div>
