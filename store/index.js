@@ -52,7 +52,7 @@ export const actions = {
 
     const portfolio = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "portfolio"]{name,"imageUrl":image{asset},stages->{name},slug{current},difficulty,text,stages->{name}}')
 
-    const parcours = await $axios.get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "parcours"]{name,speciality,year,location,status}')
+    const parcours = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "parcours"]{name,speciality,year,location,status}')
 
     await dispatch('setStages', stages.result)
     await dispatch('setPages', pages.result)
