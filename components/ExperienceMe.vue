@@ -14,7 +14,7 @@
         </a>
         <p>{{ exp.name }}</p>
         <p>{{ exp.theme }}</p>
-        <p>{{ exp.locate }}</p>
+        <p>{{ exp.location }}</p>
       </div>
     </div>
   </div>
