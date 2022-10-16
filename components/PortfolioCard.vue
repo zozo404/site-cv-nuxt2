@@ -8,6 +8,7 @@
             :src="work.imageUrl.asset._ref"
             placeholder
             class="h-52 w-full"
+            :alt="work.imageUrl.alt"
           />
           <div class="p-5">
             <p class="text-2xl text-center mb-5 text-gray-50">

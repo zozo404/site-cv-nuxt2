@@ -44,13 +44,13 @@ export const mutations = {
 
 export const actions = {
   async nuxtServerInit ({ dispatch }, { $axios }) {
-    const stages = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "stages"]{name,"imageId":image{asset}, link, year, location,theme}')
+    const stages = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "stages"]{name,"imageId":image{asset,alt}, link, year, location,theme}')
 
-    const pages = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "Pages"]{name,"imageId":image{asset},titre,text}')
+    const pages = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "Pages"]{name,"imageId":image{asset,alt},titre,text}')
 
-    const skills = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "skills"]{name,"imageUrl": image{asset}}')
+    const skills = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "skills"]{name,"imageUrl": image{asset,alt}}')
 
-    const portfolio = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "portfolio"]{name,"imageUrl":image{asset},stages->{name},slug{current},difficulty,text,stages->{name},link}')
+    const portfolio = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "portfolio"]{name,"imageUrl":image{asset,alt},stages->{name},slug{current},difficulty,text,stages->{name},link}')
 
     const parcours = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "parcours"]{name,speciality,year,location,status}')
 

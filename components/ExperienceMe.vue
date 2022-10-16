@@ -9,6 +9,7 @@
             provider="sanity"
             placeholder
             class="w-12 py-2"
+            :alt="exp.imageId.alt"
           />
         </a>
         <p>{{ exp.name }}</p>

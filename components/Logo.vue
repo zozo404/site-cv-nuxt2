@@ -4,7 +4,7 @@
     <nuxt-img
       provider="sanity"
       :src="Logo.imageId.asset._ref"
-      alt="logo zozoy"
+      :alt="Logo.imageId.alt"
       class="h-40"
       sizes="xs:100vw"
     />

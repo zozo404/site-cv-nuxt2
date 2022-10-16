@@ -11,6 +11,7 @@
         :src="skill.imageUrl.asset._ref"
         placeholder
         class="w-16 h-auto"
+        :alt="skill.imageUrl.alt"
       />
     </div>
   </div>
