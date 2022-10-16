@@ -2,27 +2,39 @@
   <div>
     <div class="p-4 mt-4">
       <div class="container">
-        <div class="flex flex-col md:grid grid-cols-12 text-gray-50">
+        <div class="flex flex-col md:grid grid-cols-12 text-gray-50 w-11/12">
           <!-- for ici -->
           <div
             v-for="park in parks"
-            :key="park in parks"
+            :key="park._id"
             class="flex md:contents"
           >
             <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
               <div class="h-full w-6 flex items-center justify-center">
-                <div class="h-full w-1 border border-1 border-pink-400 bg-pink-400 pointer-events-none" />
+                <div class="h-full w-1 border border-1 border-orange-400 bg-orange-400 pointer-events-none" />
               </div>
-              <div class="w-6 h-6 absolute top-1/2 -mt-3  border border-1 border-pink-400 bg-pink-800 rounded-xl shadow text-center flex items-center justify-center">
+              <!-- div pour montrer obtention ou non du diplome -->
+              <!-- si on a le diplome -->
+              <div v-if="park.status == true" class="w-6 h-6 absolute top-1/2 -mt-3  border border-1 border-green-400 bg-green-800 rounded-xl shadow text-center flex items-center justify-center">
                 <i class="fas fa-check-circle text-white" />
               </div>
+              <!-- si on ne l'a pas -->
+              <div v-else class="w-6 h-6 absolute top-1/2 -mt-3  border border-1 border-red-400 bg-red-800 rounded-xl shadow text-center flex items-center justify-center">
+                <i class="fas fa-circle-xmark text-white" />
+              </div>
             </div>
-            <div class="border border-1 border-pink-400 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
+            <div class="border border-orange-400 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
               <h3 class="font-semibold text-lg mb-1">
                 {{ park.name }}
               </h3>
+              <p class="italic">
+                {{ park.speciality }}
+              </p>
               <p class="leading-tight text-justify w-full">
                 {{ park.year }}
+              </p>
+              <p>
+                {{ park.location }}
               </p>
             </div>
           </div>

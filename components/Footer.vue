@@ -1,9 +1,16 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <footer id="footer" class="bg-gray-900">
+  <footer id="footer" class="bg-zinc-900">
     <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
       <div class="mt-8 flex justify-center space-x-6">
-        <a v-for="item in navigation.social" :key="item.name" :href="item.href" class="text-gray-400 hover:text-gray-500">
+        <a
+          v-for="item in navigation.social"
+          :key="item.name"
+          :href="item.href"
+          class="text-gray-400 hover:text-gray-500"
+          target="_blank"
+          rel="noopener"
+        >
           <span class="sr-only">{{ item.name }}</span>
           <i :class="item.icon" class="h-6 w-6 text-gray-50" />
         </a>

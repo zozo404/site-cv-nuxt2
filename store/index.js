@@ -50,7 +50,7 @@ export const actions = {
 
     const skills = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "skills"]{name,"imageUrl": image{asset}}')
 
-    const portfolio = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "portfolio"]{name,"imageUrl":image{asset},stages->{name},slug{current},difficulty,text,stages->{name}}')
+    const portfolio = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "portfolio"]{name,"imageUrl":image{asset},stages->{name},slug{current},difficulty,text,stages->{name},link}')
 
     const parcours = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "parcours"]{name,speciality,year,location,status}')
 

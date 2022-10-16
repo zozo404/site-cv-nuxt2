@@ -6,14 +6,14 @@
         Passionné de développement, des nouvelles technologies, de cryptomonnaie et bien plus encore, je suis actuellement libre pour tout contrat afin de partager mes compétences et ma curiosité.
       </p>
     </div>
-    <div class="flex flex-col items-center gap-5">
+    <div class="flex flex-col items-center gap-5 lg:flex-row lg:justify-center">
       <a
         v-for="btn in button.link"
         :key="btn.name"
         :href="btn.href"
         target="_blank"
         rel="noopener"
-        class="duration-150 border-2 border-pink-400 border-opacity-0 hover:border-2 hover:border-opacity-100 rounded-full py-3 px-5"
+        class="duration-150 border-2 border-orange-400 border-opacity-0 hover:border-2 hover:border-opacity-100 rounded-full py-3 px-5"
       >{{ btn.name }}</a>
     </div>
   </div>
