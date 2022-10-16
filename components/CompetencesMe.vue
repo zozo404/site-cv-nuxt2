@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="pb-5">
     <p class="text-center pb-3">
       Voici toutes les technologies avec lesquelles j'ai pu travailler
     </p>
-    <div class="flex justify-center flex-wrap gap-8 items-center">
+    <div class="flex justify-center flex-wrap gap-8 items-center px-1">
       <nuxt-img
         v-for="skill in skills"
         :key="skill._id"

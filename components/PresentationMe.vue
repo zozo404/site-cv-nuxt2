@@ -6,7 +6,7 @@
         Passionné de développement, des nouvelles technologies, de cryptomonnaie et bien plus encore, je suis actuellement libre pour tout contrat afin de partager mes compétences et ma curiosité.
       </p>
     </div>
-    <div class="flex flex-col items-center gap-5">
+    <div class="flex flex-col items-center gap-5 lg:flex-row lg:justify-center">
       <a
         v-for="btn in button.link"
         :key="btn.name"

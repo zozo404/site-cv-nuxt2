@@ -2,14 +2,14 @@
   <div>
     <form action="https://getform.io/f/ae1658ac-b595-4be1-9013-ebf2a296b6b1" method="POST">
       <!-- boucle pour les champs du mail -->
-      <div class="flex flex-col flex-wrap gap-5 items-center">
-        <div v-for="input in inputs" :key="input._id">
-          <p>
+      <div class="flex flex-col flex-wrap gap-5 items-center mt-5">
+        <div v-for="input in inputs" :key="input._id" class="flex">
+          <p class="pr-1">
             {{ input.title }}:
           </p>
           <input
             :key="input._name"
-            class="text-black last:h-8"
+            class="text-black last:h-8 last:w-60 bg-gray-100 rounded-md p-1 text-lg"
             :type="input.type"
             :name="input.name"
             :minlength="input.minlength"
@@ -17,7 +17,7 @@
         </div>
         <p>Message :</p>
         <textarea
-          class="text-black w-3/5"
+          class="text-black w-3/5 bg-gray-100 rounded-md p-1 text-lg"
           type="message"
           name="message"
           minlength="10"

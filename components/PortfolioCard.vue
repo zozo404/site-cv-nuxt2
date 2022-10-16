@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-1 grid-row-3 place-self-auto xl:grid-cols-4 gap-4 items-center p-10  ">
+  <div class="grid grid-cols-1 grid-row-3 place-self-auto xl:grid-cols-4 gap-4 items-center p-10">
     <div v-for="work in works" :key="work._id" class="flex flex-col items-center h-full w-full  rounded-xl ">
       <nuxt-link :to="work.slug.current" class="max-w-sm overflow-hidden rounded-xl shadow-md duration-200 hover:scale-105 hover:shadow-xl w-full h-full border-2 border-orange-500">
         <div>

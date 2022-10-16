@@ -21,13 +21,13 @@
       </div>
       <!-- navigation -->
       <div
-        class="hidden col-span-2 lg:col-span-1 lg:col-start-2 lg:row-start-1 lg:flex flex-row gap-4 items-center"
+        class="hidden col-span-2 lg:col-span-1 lg:col-start-2 lg:row-start-1 lg:flex flex-row gap-2 xl:gap-8 items-center"
       >
         <div v-for="lien in liens" :key="lien.texte" class="mb-4 py-4 flex space-x-6">
           <a
             key="Index"
             :href="lien.lien"
-            class="text-base lg:text-2xl font-medium text-white hover:text-indigo-50"
+            class="text-base lg:text-xl 2xl:text-2xl font-medium text-white hover:text-indigo-50"
             @click="toggle"
           >
             {{ lien.texte }}
