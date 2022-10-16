@@ -13,7 +13,7 @@
             <p class="text-2xl text-center mb-5 text-gray-50">
               {{ work.name }}
             </p>
-            <button class="w-full rounded-md bg-indigo-700  py-2 text-indigo-100 hover:bg-indigo-500 hover:shadow-md duration-75">
+            <button class="w-full rounded-md bg-black  py-2 text-indigo-100 hover:bg-amber-600 hover:shadow-md duration-200">
               En savoir plus
             </button>
           </div>
