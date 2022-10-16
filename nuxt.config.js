@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'site-cv-nuxt2',
+    title: 'zozoy.fr',
     htmlAttrs: {
       lang: 'fr'
     },
@@ -14,7 +14,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Bienvenue sur mon site cv, il permet de montrer mes compétences ainsi que mes réalisations' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
