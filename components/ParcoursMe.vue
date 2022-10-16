@@ -6,7 +6,7 @@
           <!-- for ici -->
           <div
             v-for="park in parks"
-            :key="park in parks"
+            :key="park._id"
             class="flex md:contents"
           >
             <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
