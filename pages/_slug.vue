@@ -10,6 +10,7 @@
       <nuxt-img
         provider="sanity"
         :src="portfolio.imageUrl.asset._ref"
+        :alt="portfolio.imageUrl.alt"
         placeholder
         class="w-full h-full sm:w-1/2 rounded-md border-2 border-orange-600"
       />
