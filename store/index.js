@@ -2,7 +2,8 @@ export const state = () => ({
   stages: [],
   pages: [],
   skills: [],
-  portfolio: []
+  portfolio: [],
+  parcours: []
 })
 
 export const getters = {
@@ -17,6 +18,9 @@ export const getters = {
   },
   getPortfolio (state) {
     return state.portfolio
+  },
+  getParcours (state) {
+    return state.parcours
   }
 }
 
@@ -32,23 +36,29 @@ export const mutations = {
   },
   SET_PORTFOLIO (state, portfolio) {
     state.portfolio = portfolio
+  },
+  SET_PARCOURS (state, parcours) {
+    state.parcours = parcours
   }
 }
 
 export const actions = {
   async nuxtServerInit ({ dispatch }, { $axios }) {
-    const stages = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "stages"]{name,"imageUrl":image{asset},_id,link}')
+    const stages = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "stages"]{name,"imageId":image{asset}, link, year, location,theme}')
 
     const pages = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "Pages"]{name,"imageId":image{asset},titre,text}')
 
-    const skills = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "skills"]{name,text,"imageUrl": image{asset},editor->{name},slug{current},youtube,players,difficulty}')
+    const skills = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "skills"]{name,"imageUrl": image{asset}}')
 
-    const portfolio = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "portfolio"]{name,"imageUrl":image{asset},_id,link}')
+    const portfolio = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "portfolio"]{name,"imageUrl":image{asset},stages->{name},slug{current},difficulty,text,stages->{name}}')
+
+    const parcours = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "parcours"]{name,speciality,year,location,status}')
 
     await dispatch('setStages', stages.result)
     await dispatch('setPages', pages.result)
     await dispatch('setSkills', skills.result)
     await dispatch('setPortfolio', portfolio.result)
+    await dispatch('setParcours', parcours.result)
   },
   setStages ({ commit }, stages) {
     commit('SET_STAGES', stages)
@@ -61,5 +71,8 @@ export const actions = {
   },
   setPortfolio ({ commit }, portfolio) {
     commit('SET_PORTFOLIO', portfolio)
+  },
+  setParcours ({ commit }, parcours) {
+    commit('SET_PARCOURS', parcours)
   }
 }

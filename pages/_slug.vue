@@ -1,51 +1,33 @@
 <template>
   <div>
     <div class="flex flex-col items-center mt-10 gap-4">
-      <nuxt-link v-if="game.editor.name == 'Ubisoft'" to="/#escape">
+      <nuxt-link to="/#portfolio">
         <h1 class="pl-2 py-3">
           Retour
         </h1>
       </nuxt-link>
-      <nuxt-link v-if="game.editor.name == 'Arvi'" to="/#arvi">
-        <h1 class="pl-2 py-3">
-          Retour
-        </h1>
-      </nuxt-link>
-      <nuxt-link v-if="game.editor.name == 'Wanadev'" to="/#arcade">
-        <h1 class="pl-2 py-3">
-          Retour
-        </h1>
-      </nuxt-link>
-      <nuxt-link v-if="game.editor.name == 'Synthesys'" to="/#synthesys">
-        <h1 class="pl-2 py-3">
-          Retour
-        </h1>
-      </nuxt-link>
-      <nuxt-link v-if="game.editor.name == 'LDLC Studio VR'" to="/#ldlc">
-        <h1 class="pl-2 py-3">
-          Retour
-        </h1>
-      </nuxt-link>
-      <Titles :title="game.name" />
-      <iframe
-        class="w-5/6 h-96 xl:w-1/2 border-2 border-pink-500 rounded-xl"
-        :src="`https://www.youtube.com/embed/${game.youtube}`"
-        title="YouTube video player"
-        frameborder="0"
-        allowfullscreen
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      <Titles :title="portfolio.name" />
+      <nuxt-img
+        provider="sanity"
+        :src="portfolio.imageUrl.asset._ref"
+        placeholder
+        class="w-full h-full sm:w-1/2 rounded-md border-2 border-orange-600"
       />
-
       <div class="mt-4 px-5 flex flex-col text-center w-1/2">
         <div class="flex justify-center space-x-4">
-          <span class="inline-flex items-center rounded-full bg-gray-100 px-3 py-0.5 text-sm font-medium text-gray-800">{{ game.players }}</span>
-          <span v-if="game.difficulty == 'easy'" class="inline-flex items-center rounded-full bg-green-100 px-3 py-0.5 text-sm font-medium text-green-800">{{ game.difficulty }}</span>
-          <span v-if="game.difficulty == 'medium'" class="inline-flex items-center rounded-full bg-yellow-100 px-3 py-0.5 text-sm font-medium text-yellow-800">{{ game.difficulty }}</span>
-          <span v-if="game.difficulty == 'hard'" class="inline-flex items-center rounded-full bg-red-100 px-3 py-0.5 text-sm font-medium text-red-800">{{ game.difficulty }}</span>
+          Difficulté du projet:
+          <span v-if="portfolio.difficulty == 'easy'" class="inline-flex items-center rounded-full bg-green-100 px-3 py-0.5 text-sm font-medium text-green-800 ml-1">{{ portfolio.difficulty }}</span>
+          <span v-if="portfolio.difficulty == 'medium'" class="inline-flex items-center rounded-full bg-yellow-100 px-3 py-0.5 text-sm font-medium text-yellow-800 ml-1">{{ portfolio.difficulty }}</span>
+          <span v-if="portfolio.difficulty == 'hard'" class="inline-flex items-center rounded-full bg-red-100 px-3 py-0.5 text-sm font-medium text-red-800 ml-1">{{ portfolio.difficulty }}</span>
         </div>
-        <p class="mt-8">
-          {{ game.text }}
+        <p class="my-8">
+          {{ portfolio.text }}
         </p>
+        <div v-if="portfolio.stages.name != null">
+          <p>
+            Le stage a été réalisé chez: {{ portfolio.stages.name }}
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -55,12 +37,12 @@ import { mapGetters } from 'vuex'
 export default {
   name: 'SlugPage',
   computed: {
-    ...mapGetters(['getGames']),
+    ...mapGetters(['getPortfolio']),
     routeSlug () {
       return this.$route.params.slug
     },
-    game () {
-      return this.getGames.find(el => el.slug.current === this.routeSlug)
+    portfolio () {
+      return this.getPortfolio.find(el => el.slug.current === this.routeSlug)
     }
   }
 }
