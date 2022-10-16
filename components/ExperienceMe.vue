@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-for="exp in exps" :key="exp._id" class="flex justify-evenly">
-      <div class="border border-1 border-pink-400 rounded-md w-1/3 text-center mb-3">
+      <div class="border border-1 border-orange-400 rounded-md w-1/3 text-center mb-3">
         <p>{{ exp.year }}</p>
         <a class="flex justify-center" :href="exp.link" target="_blank" rel="noopener">
           <nuxt-img

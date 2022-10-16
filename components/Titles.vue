@@ -1,9 +1,9 @@
 <template>
-  <div :id="id" class="bg-gray-900 flex flex-col items-center">
+  <div :id="id" class="bg-zinc-900 flex flex-col items-center">
     <h2 class="sm:text-4xl lg:text-5xl text-3xl font-extrabold text-white text-center px-4 pt-6 ">
       <span class="">{{ title }}</span>
     </h2>
-    <div v-if="subtitle" class="flex w-3/4 justify-center items-center bg-gray-800 py-8 border-2 border-pink-400 rounded-full mb-4">
+    <div v-if="subtitle" class="flex w-3/4 justify-center items-center py-8 border-2 border-orange-400 rounded-full mb-4">
       <p class="lg:w-1/2 sm:text-4xl lg:text-4xl text-3xl font-extrabold text-white text-center">
         {{ subtitle }}
       </p>

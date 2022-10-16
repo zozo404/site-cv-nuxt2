@@ -12,6 +12,7 @@
     <Titles :id="'portfolio'" subtitle="Portfolio" />
     <PortfolioCard :works="Portfolio" />
     <Titles :id="'contact'" subtitle="Contact" />
+    <ContactMe />
   </div>
 </template>
 
