@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="p-4 mt-4">
-      <div class="container">
-        <div class="flex flex-col md:grid grid-cols-12 text-gray-50 w-11/12">
+    <div class="p-4 mt-4 flex justify-center">
+      <div class="container ">
+        <div class="flex flex-col md:grid grid-cols-12 text-gray-50 2xl:w-11/12">
           <!-- for ici -->
           <div
             v-for="park in parks"
