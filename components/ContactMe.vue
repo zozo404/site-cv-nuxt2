@@ -26,7 +26,7 @@
         />
       </div>
       <div class="text-center">
-        <button type="submit" class="p-1 rounded-md bg-cyan-400 text-black mt-4 w-24">
+        <button type="submit" class="p-1 rounded-md bg-cyan-400 text-black mt-4 w-24 shadow-md duration-200 hover:scale-105 hover:shadow-xl">
           Envoyer
         </button>
       </div>
