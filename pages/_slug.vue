@@ -24,11 +24,6 @@
         <p class="my-8">
           {{ portfolio.text }}
         </p>
-        <div v-if="portfolio.stages.name != null">
-          <p>
-            Le stage a été réalisé chez: {{ portfolio.stages.name }}
-          </p>
-        </div>
         <br>
         <p>
           Vous pouvez accéder au github du projet <br>
