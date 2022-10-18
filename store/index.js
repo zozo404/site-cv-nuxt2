@@ -2,8 +2,8 @@ export const state = () => ({
   stages: [],
   pages: [],
   skills: [],
-  portfolio: [],
-  parcours: []
+  portfolio: []
+  // parcours: []
 })
 
 export const getters = {
@@ -18,10 +18,10 @@ export const getters = {
   },
   getPortfolio (state) {
     return state.portfolio
-  },
-  getParcours (state) {
-    return state.parcours
   }
+  // getParcours (state) {
+  //   return state.parcours
+  // }
 }
 
 export const mutations = {
@@ -36,10 +36,10 @@ export const mutations = {
   },
   SET_PORTFOLIO (state, portfolio) {
     state.portfolio = portfolio
-  },
-  SET_PARCOURS (state, parcours) {
-    state.parcours = parcours
   }
+  // SET_PARCOURS (state, parcours) {
+  //   state.parcours = parcours
+  // }
 }
 
 export const actions = {
@@ -52,13 +52,13 @@ export const actions = {
 
     const portfolio = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "portfolio"]{name,"imageUrl":image{asset,alt},stages->{name},slug{current},difficulty,text,stages->{name},link}')
 
-    const parcours = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "parcours"]{name,speciality,year,location,status}')
+    // const parcours = await $axios.$get('https://5xe4ems3.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "parcours"]{name,speciality,year,location,status}')
 
     await dispatch('setStages', stages.result)
     await dispatch('setPages', pages.result)
     await dispatch('setSkills', skills.result)
     await dispatch('setPortfolio', portfolio.result)
-    await dispatch('setParcours', parcours.result)
+    // await dispatch('setParcours', parcours.result)
   },
   setStages ({ commit }, stages) {
     commit('SET_STAGES', stages)
@@ -71,8 +71,8 @@ export const actions = {
   },
   setPortfolio ({ commit }, portfolio) {
     commit('SET_PORTFOLIO', portfolio)
-  },
-  setParcours ({ commit }, parcours) {
-    commit('SET_PARCOURS', parcours)
   }
+  // setParcours ({ commit }, parcours) {
+  //   commit('SET_PARCOURS', parcours)
+  // }
 }
