@@ -48,10 +48,39 @@
 <script>
 export default {
   name: 'ParcoursMe',
-  props: {
-    parks: {
-      default: null,
-      type: Array
+  data () {
+    return {
+      parks: [
+        {
+          status: true,
+          name: 'Formation Osengo',
+          speciality: 'Développement Web et Web mobile',
+          year: '2022',
+          location: 'Les 5 Eléments - Perpignan'
+        },
+        {
+          status: false,
+          name: 'BTS SIO',
+          speciality: 'Services Informatiques aux Organisations',
+          year: '2021',
+          location: 'Lycée Jean Lurçat - Perpignan'
+        },
+        {
+          status: true,
+          name: 'Bac STL',
+          speciality: 'Sciences et Technologies de Laboratoires (SPCL)',
+          year: '2019',
+          location: 'Lycée Aristide Maillol - Perpignan'
+        },
+        {
+          status: true,
+          name: 'Brevet des Collèges',
+          speciality: 'Brevet Général',
+          year: '2016',
+          location: 'Collège le Ribéral - Saint-Estève'
+        }
+
+      ]
     }
   }
 }
