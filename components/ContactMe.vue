@@ -1,7 +1,8 @@
 <template>
   <div>
+    <!-- contact form I implemented with getform -->
     <form action="https://getform.io/f/ae1658ac-b595-4be1-9013-ebf2a296b6b1" method="POST">
-      <!-- boucle pour les champs du mail -->
+      <!-- boucle for mail -->
       <div class="flex flex-col flex-wrap gap-5 items-center mt-5">
         <div v-for="input in inputs" :key="input._id" class="flex">
           <p class="pr-1">
@@ -63,4 +64,3 @@ export default {
   }
 }
 </script>
-</template></template></template></template></template></template></template></template></template></template></template></template></template></template></template></template></template></template></template></template></template></template>

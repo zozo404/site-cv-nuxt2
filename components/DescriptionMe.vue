@@ -1,14 +1,13 @@
 <template>
   <div>
+    <!-- intro component -->
     <div class="flex flex-col items-center lg:text-2xl">
       <p class="px-8 pb-7">
-        Hey, <br>
+        👋, <br>
         Je suis Enzo 👨‍💻 <br>
         Je viens de finir la formation Osengo de développeur Web et Web mobile.
       </p>
-      <div class="border border-1 h-16 w-8 rounded-2xl flex flex-col items-center">
-        <div class="border-4 w-1 rounded-full border-red-600 animate relative top-14" />
-      </div>
+      <ButtonScroll />
     </div>
   </div>
 </template>

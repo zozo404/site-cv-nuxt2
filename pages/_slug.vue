@@ -3,6 +3,7 @@
     <div class="flex flex-col items-center mt-10 gap-4">
       <nuxt-link to="/#portfolio">
         <h1 class="pl-2 py-3">
+          <i class="fa-solid fa-arrow-left" />
           Retour
         </h1>
       </nuxt-link>
