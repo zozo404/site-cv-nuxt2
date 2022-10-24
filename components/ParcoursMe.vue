@@ -3,7 +3,7 @@
     <div class="p-4 mt-4 flex justify-center">
       <div class="container ">
         <div class="flex flex-col md:grid grid-cols-12 text-gray-50 2xl:w-11/12">
-          <!-- for ici -->
+          <!-- start for | for loop to display my background, with the name, specialty, year and location of the degree -->
           <div
             v-for="park in parks"
             :key="park._id"
@@ -13,12 +13,12 @@
               <div class="h-full w-6 flex items-center justify-center">
                 <div class="h-full w-1 border border-1 border-orange-400 bg-orange-400 pointer-events-none" />
               </div>
-              <!-- div pour montrer obtention ou non du diplome -->
-              <!-- si on a le diplome -->
+              <!-- div to show graduation or not -->
+              <!-- if we have the diploma -->
               <div v-if="park.status == true" class="w-6 h-6 absolute top-1/2 -mt-3  border border-1 border-green-400 bg-green-800 rounded-xl shadow text-center flex items-center justify-center">
                 <i class="fas fa-check-circle text-white" />
               </div>
-              <!-- si on ne l'a pas -->
+              <!-- if we don't have it -->
               <div v-else class="w-6 h-6 absolute top-1/2 -mt-3  border border-1 border-red-400 bg-red-800 rounded-xl shadow text-center flex items-center justify-center">
                 <i class="fas fa-circle-xmark text-white" />
               </div>
@@ -38,7 +38,7 @@
               </p>
             </div>
           </div>
-          <!-- fin for ici -->
+          <!-- end for -->
         </div>
       </div>
     </div>
@@ -53,8 +53,8 @@ export default {
       parks: [
         {
           status: true,
-          name: 'Formation Osengo',
-          speciality: 'Développement Web et Web mobile',
+          name: 'Développement Web et Web mobile',
+          speciality: 'Formation Osengo',
           year: '2022',
           location: 'Les 5 Eléments - Perpignan'
         },
