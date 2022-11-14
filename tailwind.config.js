@@ -3,8 +3,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        comfortaa: "'Comfortaa', cursive",
-        rubik: 'Rubik Bubbles'
+        comfortaa: "'Comfortaa', cursive"
       }
     }
   },
