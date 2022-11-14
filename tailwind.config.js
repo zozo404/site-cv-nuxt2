@@ -4,7 +4,7 @@ module.exports = {
     extend: {
       fontFamily: {
         comfortaa: "'Comfortaa', cursive",
-        rubik: 'Rubik Bubbles, cursive'
+        rubik: 'Rubik Bubbles'
       }
     }
   },
