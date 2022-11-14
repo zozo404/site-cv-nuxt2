@@ -3,4 +3,8 @@
         font-family: 'Comfortaa';
         src: url('/static/fonts/Comfortaa-Light.woff2') format('woff2');
     }
+    @font-face {
+        font-family: 'Rubik';
+        src: url('/static/fonts/RubikBubbles-Regular.woff2') format('woff2');
+    }
 }

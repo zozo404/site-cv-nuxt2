@@ -3,7 +3,7 @@
     <!-- displays a photo of me that is imported by adding a description and the buttons to their respective link -->
     <div class="flex flex-col items-center">
       <Logo />
-      <p class="text-center mt-2 w-1/2 text-lg pb-4 font-comfortaa">
+      <p class="text-center mt-2 w-1/2 text-lg pb-4 font-rubik">
         Passionné de développement, des nouvelles technologies, de cryptomonnaie et bien plus encore, je suis actuellement disponible pour toute mission afin de partager mes compétences et ma curiosité.
       </p>
     </div>
