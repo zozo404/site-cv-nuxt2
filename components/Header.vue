@@ -27,7 +27,7 @@
           <a
             key="Index"
             :href="lien.lien"
-            class="text-base lg:text-xl 2xl:text-2xl font-medium text-white hover:text-indigo-50"
+            class="text-base lg:text-xl 2xl:text-2xl font-medium text-gray-300 hover:text-indigo-50"
             @click="toggle"
           >
             {{ lien.texte }}
@@ -61,7 +61,7 @@
         <nuxt-link
           key="Index"
           :to="lien.lien"
-          class="text-2xl font-medium text-white hover:text-indigo-50"
+          class="text-2xl font-medium text-gray-300 hover:text-indigo-50"
           @click.native="toggle"
         >
           {{ lien.texte }}

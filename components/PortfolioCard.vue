@@ -13,10 +13,10 @@
               :alt="work.imageUrl.alt"
             />
             <div class="p-5">
-              <p class="text-2xl text-center mb-5 text-gray-50">
+              <p class="text-2xl text-center mb-5 text-gray-300">
                 {{ work.name }}
               </p>
-              <button class="w-full rounded-md bg-black  py-2 text-indigo-100 hover:bg-amber-600 hover:shadow-md duration-200">
+              <button class="w-full rounded-md bg-black  py-2 text-gray-300 hover:bg-amber-600 hover:shadow-md duration-200">
                 En savoir plus
               </button>
             </div>

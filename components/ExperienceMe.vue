@@ -2,7 +2,7 @@
   <div class="flex flex-wrap justify-evenly my-5">
     <!-- for loop to show my professional experiences (internships in companies) -->
     <div v-for="exp in exps" :key="exp._id" class="flex w-4/5 md:w-auto">
-      <div class="border border-1 border-orange-400 rounded-md text-center mb-3 w-full p-4 flex flex-col items-center justify-evenly">
+      <div class="border border-1 border-orange-400 rounded-md text-center mb-3 w-full p-8 gap-4 flex flex-col items-center justify-evenly">
         <p>{{ exp.year }}</p>
         <a class="flex justify-center" :href="exp.link" target="_blank" rel="noopener">
           <nuxt-img

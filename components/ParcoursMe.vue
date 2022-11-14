@@ -2,7 +2,7 @@
   <div>
     <div class="p-4 mt-4 flex justify-center">
       <div class="container ">
-        <div class="flex flex-col md:grid grid-cols-12 text-gray-50 2xl:w-11/12">
+        <div class="flex flex-col md:grid grid-cols-12 text-gray-300 2xl:w-11/12">
           <!-- start for | for loop to display my background, with the name, specialty, year and location of the degree -->
           <div
             v-for="park in parks"
@@ -16,11 +16,11 @@
               <!-- div to show graduation or not -->
               <!-- if we have the diploma -->
               <div v-if="park.status == true" class="w-6 h-6 absolute top-1/2 -mt-3  border border-1 border-green-400 bg-green-800 rounded-xl shadow text-center flex items-center justify-center">
-                <i class="fas fa-check-circle text-white" />
+                <i class="fas fa-check-circle text-gray-300" />
               </div>
               <!-- if we don't have it -->
               <div v-else class="w-6 h-6 absolute top-1/2 -mt-3  border border-1 border-red-400 bg-red-800 rounded-xl shadow text-center flex items-center justify-center">
-                <i class="fas fa-circle-xmark text-white" />
+                <i class="fas fa-circle-xmark text-gray-300" />
               </div>
             </div>
             <div class="border border-orange-400 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
