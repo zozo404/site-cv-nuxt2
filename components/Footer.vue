@@ -12,7 +12,7 @@
           rel="noopener"
         >
           <span class="sr-only">{{ item.name }}</span>
-          <i :class="item.icon" class="h-6 w-6 text-gray-50" />
+          <i :class="item.icon" class="h-6 w-6 text-gray-300 hover:text-indigo-50" />
         </a>
       </div>
       <p class="mt-8 text-center text-base text-gray-400">

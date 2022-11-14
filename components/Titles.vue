@@ -4,7 +4,7 @@
       <span class="">{{ title }}</span>
     </h2>
     <div v-if="subtitle" class="flex w-3/4 md:w-1/3 justify-center items-center py-8 border-2 border-orange-400 rounded-full mb-4">
-      <p class="lg:w-1/2 sm:text-4xl lg:text-4xl text-3xl font-light text-white text-center">
+      <p class="lg:w-1/2 sm:text-4xl lg:text-4xl text-3xl font-light text-gray-300 text-center">
         {{ subtitle }}
       </p>
     </div>

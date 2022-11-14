@@ -10,7 +10,7 @@
           </p>
           <input
             :key="input._name"
-            class="text-black last:h-8 last:w-60 bg-gray-100 rounded-md p-1 text-lg"
+            class="text-black last:h-8 last:w-60 bg-gray-300 rounded-md p-1 text-lg"
             :type="input.type"
             :name="input.name"
             :minlength="input.minlength"
@@ -18,7 +18,7 @@
         </div>
         <p>Message :</p>
         <textarea
-          class="text-black w-3/5 bg-gray-100 rounded-md p-1 text-lg"
+          class="text-black w-3/5 bg-gray-300 rounded-md p-1 text-lg"
           type="message"
           name="message"
           minlength="10"

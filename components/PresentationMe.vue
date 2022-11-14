@@ -3,7 +3,7 @@
     <!-- displays a photo of me that is imported by adding a description and the buttons to their respective link -->
     <div class="flex flex-col items-center">
       <Logo />
-      <p class="text-center mt-2 w-1/2 text-lg pb-4">
+      <p class="text-center mt-2 w-1/2 text-lg pb-4 font-comfortaa">
         Passionné de développement, des nouvelles technologies, de cryptomonnaie et bien plus encore, je suis actuellement disponible pour toute mission afin de partager mes compétences et ma curiosité.
       </p>
     </div>
@@ -15,7 +15,7 @@
         :href="btn.href"
         target="_blank"
         rel="noopener"
-        class="duration-150 border-2 border-orange-400 border-opacity-0 hover:border-2 hover:border-opacity-100 rounded-full py-3 px-5"
+        class="duration-150 border-2 border-orange-400 border-opacity-50 hover:border-2 hover:border-opacity-100 rounded-full py-3 px-5"
       >{{ btn.name }}</a>
     </div>
   </div>
