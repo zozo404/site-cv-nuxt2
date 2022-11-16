@@ -19,6 +19,12 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      {
+        src: ' https://www.google.com/recaptcha/enterprise.js?render=6LcioxAjAAAAAOuX5ctmTpxjnvrgHKbK_0NwGTgV',
+        body: true
+      }
     ]
   },
 
