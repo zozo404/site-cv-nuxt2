@@ -1,6 +1,0 @@
-@layer base{
-    @font-face {
-        font-family: 'Comfortaa';
-        src: url('/static/fonts/Comfortaa-Light.woff2') format('woff2');
-    }
-}
