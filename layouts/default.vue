@@ -11,3 +11,8 @@ export default {
   name: 'DefaultLayout'
 }
 </script>
+<style>
+html{
+  font-family: 'Comfortaa';
+}
+</style>

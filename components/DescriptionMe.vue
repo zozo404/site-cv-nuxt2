@@ -2,11 +2,6 @@
   <div>
     <!-- intro component -->
     <div class="flex flex-col items-center lg:text-2xl text-gray-300">
-      <p class="px-8 pb-7">
-        👋, <br>
-        Je suis Enzo 👨‍💻 <br>
-        Je viens de finir la formation Osengo de développeur Web et Web mobile.
-      </p>
       <ButtonScroll />
     </div>
   </div>

@@ -22,6 +22,7 @@
               <div v-else class="w-6 h-6 absolute top-1/2 -mt-3  border border-1 border-red-400 bg-red-800 rounded-xl shadow text-center flex items-center justify-center">
                 <i class="fas fa-circle-xmark text-gray-300" />
               </div>
+              <!-- end if for my graduation -->
             </div>
             <div class="border border-orange-400 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
               <h3 class="font-semibold text-lg mb-1">
