@@ -1,9 +1,9 @@
 <template>
   <div>
     <!-- contact form I implemented with getform -->
-    <form action="https://getform.io/f/ae1658ac-b595-4be1-9013-ebf2a296b6b1" method="POST">
-      <!-- boucle for mail -->
-      <div class="flex flex-col flex-wrap gap-5 items-center mt-5">
+    <!-- <form action="https://getform.io/f/ae1658ac-b595-4be1-9013-ebf2a296b6b1" method="POST"> -->
+    <!-- boucle for mail -->
+    <!-- <div class="flex flex-col flex-wrap gap-5 items-center mt-5">
         <div v-for="input in inputs" :key="input._id" class="flex">
           <p class="pr-1">
             {{ input.title }}:
@@ -32,7 +32,10 @@
           Envoyer
         </button>
       </div>
-    </form>
+    </form> -->
+    <p class="text-center">
+      Le formulaire de contact est indisponible pour le moment ⚠️ <br><a href="mailto:zozodev@mail.fr" class="text-orange-500">Contactez-moi en cliquant ici!</a>
+    </p>
   </div>
 </template>
 
