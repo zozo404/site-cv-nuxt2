@@ -26,8 +26,10 @@ export default {
     ],
     script: [
       {
-        src: ' https://www.google.com/recaptcha/enterprise.js?render=6LcioxAjAAAAAOuX5ctmTpxjnvrgHKbK_0NwGTgV',
-        body: true
+        hid: 'captcha',
+        src: ' https://js.hcaptcha.com/1/api.js',
+        defer: true,
+        async: true
       }
     ]
   },
