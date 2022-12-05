@@ -34,7 +34,7 @@
       </div>
     </form> -->
     <p class="text-center">
-      Le formulaire de contact est indisponible pour le moment ⚠️ <br><a href="mailto:zozodev@mail.fr" class="text-orange-500">Contactez-moi en cliquant ici!</a>
+      Le formulaire de contact est indisponible pour le moment ⚠️ <br><a href="mailto:zozoydev@gmail.fr" class="text-orange-500">Contactez-moi en cliquant ici!</a>
     </p>
   </div>
 </template>
