@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div>
     <DescriptionMe class="scroll-mt-60 lg:scroll-mt-40 py-10" />
@@ -15,6 +16,7 @@
     <ContactMe class="scroll-mt-60 lg:scroll-mt-40" />
   </div>
 </template>
+<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 
 <script>
 import { mapGetters } from 'vuex'
