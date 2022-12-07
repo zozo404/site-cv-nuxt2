@@ -29,6 +29,8 @@
         <div class="h-captcha" data-sitekey="d42073a5-2102-4f2d-893a-d2c9f4c55ffc" />
       </div>
       <div class="text-center">
+        <i>NB: Si le captcha ne s'affiche pas, désactivez vos bloqueurs de pub et relancez la page</i>
+        <br>
         <button type="submit" class="p-1 rounded-md bg-cyan-400 text-black mt-4 w-24 shadow-md duration-200 hover:scale-105 hover:shadow-xl">
           Envoyer
         </button>
