@@ -1,7 +1,7 @@
 <template>
   <div>
-    <!-- contact form I implemented with getform -->
-    <form action="https://getform.io/f/ae1658ac-b595-4be1-9013-ebf2a296b6b1" method="POST">
+    <!-- contact form I implemented with netlify -->
+    <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
       <div class="flex flex-col flex-wrap gap-5 items-center mt-5">
         <div v-for="input in inputs" :key="input._id" class="flex">
           <p class="pr-1">
@@ -13,6 +13,7 @@
             :type="input.type"
             :name="input.name"
             :minlength="input.minlength"
+            required="required"
           >
         </div>
         <p>Message :</p>
@@ -23,10 +24,11 @@
           minlength="10"
           cols="7"
           rows="7"
+          required="required"
         />
-        <div class="h-captcha" data-sitekey="d42073a5-2102-4f2d-893a-d2c9f4c55ffc" />
       </div>
       <div class="text-center">
+        <div data-netlify-recaptcha="true" />
         <button type="submit" class="p-1 rounded-md bg-cyan-400 text-black mt-4 w-24 shadow-md duration-200 hover:scale-105 hover:shadow-xl">
           Envoyer
         </button>

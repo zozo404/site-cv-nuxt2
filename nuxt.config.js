@@ -23,14 +23,6 @@ export default {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap'
       }
-    ],
-    script: [
-      {
-        hid: 'captcha',
-        src: ' https://js.hcaptcha.com/1/api.js',
-        defer: true,
-        async: true
-      }
     ]
   },
 
