@@ -13,6 +13,7 @@
             :type="input.type"
             :name="input.name"
             :minlength="input.minlength"
+            required="required"
           >
         </div>
         <p>Message :</p>
@@ -23,6 +24,7 @@
           minlength="10"
           cols="7"
           rows="7"
+          required="required"
         />
         <div class="h-captcha" data-sitekey="d42073a5-2102-4f2d-893a-d2c9f4c55ffc" />
       </div>
