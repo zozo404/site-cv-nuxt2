@@ -60,7 +60,7 @@ export default {
           location: 'Les 5 Eléments - Perpignan'
         },
         {
-          status: false,
+          status: true,
           name: 'BTS SIO',
           speciality: 'Services Informatiques aux Organisations',
           year: '2021',
