@@ -15,7 +15,7 @@
         placeholder
         class="w-full h-full sm:w-1/2 rounded-md border-2 border-orange-600"
       />
-      <div class="mt-4 px-5 flex flex-col text-center w-1/2">
+      <div class="mt-4 px-5 flex flex-col text-center w-4/5 lg:w-1/2">
         <div class="flex justify-center space-x-4">
           Difficulté du projet:
           <span v-if="portfolio.difficulty == 'Simple'" class="inline-flex items-center rounded-full bg-green-100 px-3 py-0.5 text-sm font-medium text-green-800 ml-1">{{ portfolio.difficulty }}</span>
