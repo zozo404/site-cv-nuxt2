@@ -5,7 +5,7 @@
       <Logo />
       <p class="text-center mt-2 w-1/2 text-lg pb-4 font-comfortaa">
         👋, Je suis Enzo 👨‍💻. Passionné de développement web, des nouvelles technologies et bien plus encore, <span class="text-orange-500">
-          je suis actuellement disponible pour toute mission
+          je suis actuellement disponible pour toute mission, CDI ou CDD
         </span>
         afin de partager mes compétences et ma curiosité.
       </p>
