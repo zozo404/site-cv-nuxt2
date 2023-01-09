@@ -6,7 +6,6 @@
     <Footer />
   </div>
 </template>
-<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 <script>
 export default {
   name: 'DefaultLayout'
