@@ -26,7 +26,7 @@
           rows="7"
           required
         />
-        <div class="h-captcha" data-sitekey="d42073a5-2102-4f2d-893a-d2c9f4c55ffc" />
+        <div class="g-recaptcha" data-sitekey="6LcZYVkjAAAAAGQMCYXMgHXmqikh4gC8K6LxUqAk" />
       </div>
       <div class="text-center">
         <i>NB: Si le captcha ne s'affiche pas, désactivez vos bloqueurs de pub et relancez la page</i>
