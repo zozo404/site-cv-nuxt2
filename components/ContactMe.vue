@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- contact form I implemented with getform -->
-    <form action="https://getform.io/f/ae1658ac-b595-4be1-9013-ebf2a296b6b1" method="POST">
+    <form action="https://getform.io/f/ae1658ac-b595-4be1-9013-ebf2a296b6b1" method="POST" enctype="multipart/form-data">
       <div class="flex flex-col flex-wrap gap-5 items-center mt-5">
         <div v-for="input in inputs" :key="input._id" class="flex">
           <p class="pr-1">
@@ -15,6 +15,13 @@
             :minlength="input.minlength"
             required
           >
+        </div>
+        <div class="flex flex-col items-center">
+          <p>
+            Fichier(s) :
+          </p>
+          <input title="Fichier" type="file" name="files[]" multiple class="text-black last:h-8 last:w-60 bg-gray-300 rounded-md p-1 text-sm">
+          <i>5 Mo max</i>
         </div>
         <p>Message :</p>
         <textarea

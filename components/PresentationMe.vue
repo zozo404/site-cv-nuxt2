@@ -33,7 +33,7 @@ export default {
         link: [
           {
             name: 'Télécharger CV',
-            href: '/CV-CUNY-Enzo.pdf'
+            href: '/CV-CUNY_Enzo.pdf'
           },
           {
             name: 'Mon Github',

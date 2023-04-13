@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div>
+  <div class="selection:bg-cyan-500 selection:text-black">
     <Header />
     <nuxt />
     <Footer />
