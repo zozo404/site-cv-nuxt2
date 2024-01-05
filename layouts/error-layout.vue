@@ -5,6 +5,6 @@
 </template>
 <style>
 .background-error{
-  background-image: url('https://cdn.sanity.io/images/5xe4ems3/production/202f43d820b5f0c6b1415b0d67680900d1a0903c-1700x800.svg?w=2000&fit=max&auto=format');
+  background-image: url('https://cdn.sanity.io/images/5xe4ems3/production/8ce982e0d014ce3d8c1482e7df005e5730f3b9a1-2000x2000.svg?w=2000&fit=max&auto=format');
 }
 </style>

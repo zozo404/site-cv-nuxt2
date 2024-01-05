@@ -7,18 +7,20 @@
       >
         <div class="text-center">
           <!-- animation -->
-          <h1 class="text-6xl font-bold font-rubik-doodle-shadow">
-            404
-          </h1>
+
+          <div class="text-6xl font-bold font-rubik-doodle-shadow animation-target">
+            <span class="letter" style="opacity: 0;">4</span>
+            <span class="letter" style="opacity: 0;">0</span>
+            <span class="letter" style="opacity: 0;">4</span>
+          </div>
           <p class="text-xl font-semibold">
-            Page not found
+            Page non existante
           </p>
           <p>
-            The page you are looking for might be under construction or does not
-            exist.
+            La page que vous recherchez est peut-être en construction ou n'existe pas.
           </p>
           <a href="/" class="text-[#adff2f] text-2xl hover:underline mt-4 block">
-            Go back home
+            Accueil
           </a>
         </div>
       </div>
@@ -32,14 +34,13 @@
             An error occurred
           </h1>
           <p class="text-xl font-semibold">
-            Page not found
+            Page non existante
           </p>
           <p class="mt-4">
-            The page you are looking for might be under construction or does not
-            exist.
+            La page que vous recherchez est peut-être en construction ou n'existe pas.
           </p>
           <a href="/" class="text-[#adff2f] hover:underline mt-4 block">
-            Go back home
+            Accueil
           </a>
         </div>
       </div>
@@ -48,9 +49,27 @@
 </template>
 
 <script>
+import anime from 'animejs'
+
 export default {
   layout: 'error-layout',
   // eslint-disable-next-line vue/require-prop-types
-  props: ['error'] // you can set a custom layout for the error page
+  props: ['error'],
+  mounted () {
+    this.playAnimation()
+  },
+  methods: {
+    playAnimation () {
+      anime({
+        targets: '.animation-target .letter',
+        opacity: [0, 1],
+        // easing: 'easeInOutQuad',
+        easing: 'easeInOutBounce',
+        delay: anime.stagger(500), // Délai entre chaque lettre
+        duration: 2000,
+        loop: true
+      })
+    }
+  }
 }
 </script>
