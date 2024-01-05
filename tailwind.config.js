@@ -1,7 +1,19 @@
 module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
-    extend: {}
+    extend: {},
+    screens: {
+      SamsungGA425G: '360px',
+      iphoneSE: '375px',
+      iphone12pro: '390px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      '2lg': '1180px',
+      xl: '1280px',
+      '2xl': '1536px',
+      '3xl': '1600px'
+    }
   },
   variants: {
     extend: {}
