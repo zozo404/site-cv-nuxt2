@@ -1,11 +1,11 @@
 <template>
   <header class="bg-zinc-900 lg:h-40 w-full z-20 sticky top-0">
     <nav
-      class="lg:max-h-40 max-h-20 w-full py-4 lg:py-6 grid grid-cols-2 grid-rows-1 lg:grid-cols-3 items-center justify-between lg:border-none bg-zinc-900"
+      class="2lg:max-h-40 max-h-20 w-full py-4 2lg:py-6 grid grid-cols-2 grid-rows-1 2lg:grid-cols-3 items-center justify-between 2lg:border-none bg-zinc-900"
       aria-label="Top"
     >
       <!-- logo -->
-      <nuxt-link to="/" class="flex justify-center lg:col-span-1 h-full">
+      <nuxt-link to="/" class="flex justify-center 2lg:col-span-1 h-full">
         <span class="sr-only">Logo</span>
         <!-- mettre img -->
         <nuxt-img
@@ -16,12 +16,12 @@
           sizes="xs:100vw"
         />
       </nuxt-link>
-      <div class="text-right pr-8 lg:hidden flex justify-end " @click="toggle">
+      <div class="text-right pr-8 2lg:hidden flex justify-end " @click="toggle">
         <i class="fas fa-bars h-8 w-8" />
       </div>
       <!-- navigation -->
       <div
-        class="hidden col-span-2 lg:col-span-1 lg:col-start-2 lg:row-start-1 lg:flex flex-row gap-2 xl:gap-4 items-center"
+        class="hidden col-span-2 2lg:col-span-1 2lg:col-start-2 2lg:row-start-1 2lg:flex flex-row gap-2 2lg:gap-[0.4rem] xl:gap-4 items-center"
       >
         <div v-for="lien in liens" :key="lien.texte" class="mb-4 py-4 flex space-x-6">
           <a
@@ -37,7 +37,7 @@
       <!-- fin nav fermée -->
     </nav>
     <!-- nav ouverte -->
-    <nav :class="{hidden:isActive}" class="lg:hidden w-screen absolute top-0 h-screen z-40 bg-zinc-900 grid grid-cols-2 grid-rows-6 ">
+    <nav :class="{hidden:isActive}" class="2lg:hidden w-full absolute top-0 h-screen z-40 bg-zinc-900 grid grid-cols-2 grid-rows-6 ">
       <div class="grid grid-cols-2 grid-rows-1 col-span-2  my-4 h-12 justify-items-center w-full">
         <!-- logo -->
         <nuxt-link to="/" class="flex justify-center lg:col-span-1 h-full ">
@@ -52,7 +52,7 @@
           />
         </nuxt-link>
         <!-- hamburger icon -->
-        <div class="w-full h-full pr-8 lg:hidden flex justify-end " @click="toggle">
+        <div class="w-full h-full pr-8 2lg:hidden flex justify-end " @click="toggle">
           <i class="fas fa-bars h-8 w-8 z-50 place-self-center" />
         </div>
       </div>
