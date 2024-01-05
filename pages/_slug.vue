@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div v-if="portfolio">
     <div class="flex flex-col items-center mt-10 gap-4">
-      <nuxt-link to="/#portfolio">
+      <div class="cursor-pointer" @click="goBack">
         <h1 class="pl-2 py-3">
           <i class="fa-solid fa-arrow-left" />
           Retour
         </h1>
-      </nuxt-link>
+      </div>
       <Titles :title="portfolio.name" />
       <nuxt-img
         provider="sanity"
@@ -45,6 +45,17 @@ export default {
     },
     portfolio () {
       return this.getPortfolio.find(el => el.slug.current === this.routeSlug)
+    }
+  },
+  // Ajoutez cette méthode pour la redirection vers la page 404
+  beforeMount () {
+    if (!this.portfolio) {
+      this.$router.push('../layouts/error')
+    }
+  },
+  methods: {
+    goBack () {
+      this.$router.back()
     }
   }
 }
