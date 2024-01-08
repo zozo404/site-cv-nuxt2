@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="fade-scroll" :class="{ visible: isVisible }">
     <!-- displays a photo of me that is imported by adding a description and the buttons to their respective link -->
     <div class="flex flex-col items-center">
       <Logo />
@@ -26,7 +26,10 @@
 
 <script>
 import { mapGetters } from 'vuex'
+import scrollFadeMixin from '~/mixins/scrollFadeMixin'
+
 export default {
+  mixins: [scrollFadeMixin],
   data () {
     return {
       button: {

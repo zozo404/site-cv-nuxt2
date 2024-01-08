@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="p-4 mt-4 flex justify-center">
+    <div class="p-4 mt-4 flex justify-center fade-scroll" :class="{ visible: isVisible }">
       <div class="container ">
         <div class="flex flex-col md:grid grid-cols-12 text-gray-300 2xl:w-11/12">
           <!-- start for | for loop to display my background, with the name, specialty, year and location of the degree -->
@@ -47,8 +47,11 @@
 </template>
 
 <script>
+import scrollFadeMixin from '~/mixins/scrollFadeMixin'
+
 export default {
   name: 'ParcoursMe',
+  mixins: [scrollFadeMixin],
   data () {
     return {
       parks: [

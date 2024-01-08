@@ -1,6 +1,6 @@
 <template>
   <div v-if="portfolio">
-    <div class="flex flex-col items-center mt-10 gap-4">
+    <div class="flex flex-col items-center mt-10 gap-4 fade-scroll" :class="{ visible: isVisible }">
       <div class="cursor-pointer" @click="goBack">
         <h1 class="pl-2 py-3">
           <i class="fa-solid fa-arrow-left" />
@@ -36,8 +36,11 @@
 </template>
 <script>
 import { mapGetters } from 'vuex'
+import scrollFadeMixin from '~/mixins/scrollFadeMixin'
+
 export default {
   name: 'SlugPage',
+  mixins: [scrollFadeMixin],
   computed: {
     ...mapGetters(['getPortfolio']),
     routeSlug () {
