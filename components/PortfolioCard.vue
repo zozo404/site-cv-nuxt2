@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="grid grid-cols-1 grid-row-3 place-self-auto xl:grid-cols-4 gap-4 items-center p-10">
+    <div class="grid grid-cols-1 grid-row-3 place-self-auto xl:grid-cols-4 gap-4 items-center p-10 fade-scroll" :class="{ visible: isVisible }">
       <!-- for loop to display some examples of my achievements, they each have a page for them, which gives the difficulty, the goal and the link of the project -->
       <div v-for="work in works" :key="work._id" class="flex flex-col items-center h-full w-full  rounded-xl ">
         <nuxt-link :to="work.slug.current" class="max-w-sm overflow-hidden rounded-xl shadow-md duration-200 hover:scale-105 hover:shadow-xl w-full h-full border-2 border-orange-500">
@@ -28,8 +28,11 @@
   </div>
 </template>
 <script>
+import scrollFadeMixin from '~/mixins/scrollFadeMixin'
+
 export default {
   name: 'PortfolioCard',
+  mixins: [scrollFadeMixin],
   props: {
     works: {
       default: null,

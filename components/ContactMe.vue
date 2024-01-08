@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="fade-scroll" :class="{ visible: isVisible }">
     <!-- contact form I implemented with getform -->
     <form action="https://getform.io/f/ae1658ac-b595-4be1-9013-ebf2a296b6b1" method="POST" enctype="multipart/form-data">
       <div class="flex flex-col flex-wrap gap-5 items-center mt-5">
@@ -46,8 +46,11 @@
   </div>
 </template>
 <script>
+import scrollFadeMixin from '~/mixins/scrollFadeMixin'
+
 export default {
   name: 'ContactMe',
+  mixins: [scrollFadeMixin],
   data () {
     return {
       inputs: [

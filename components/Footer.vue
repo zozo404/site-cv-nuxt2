@@ -1,6 +1,6 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <footer id="footer" class="bg-zinc-900">
+  <footer id="footer" class="bg-zinc-900 fade-scroll" :class="{ visible: isVisible }">
     <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
       <div class="mt-8 flex justify-center space-x-6">
         <a
@@ -23,8 +23,11 @@
 </template>
 
 <script>
+import scrollFadeMixin from '~/mixins/scrollFadeMixin'
+
 export default {
   name: 'FooterApp',
+  mixins: [scrollFadeMixin],
   data () {
     return {
       navigation: {

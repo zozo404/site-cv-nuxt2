@@ -1,6 +1,6 @@
 <template>
   <!-- my skills, we display technology logos with a "v-for" and an import from Sanity -->
-  <div class="pb-5">
+  <div class="pb-5 fade-scroll" :class="{ visible: isVisible }">
     <p class="text-center pb-3 text-lg">
       Voici toutes les technologies avec lesquelles j'ai pu travailler
     </p>
@@ -19,9 +19,11 @@
 </template>
 
 <script>
+import scrollFadeMixin from '~/mixins/scrollFadeMixin'
 
 export default {
   name: 'CompetencesMe',
+  mixins: [scrollFadeMixin],
   props: {
     skills: {
       default: null,
