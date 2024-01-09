@@ -16,7 +16,7 @@
           sizes="xs:100vw"
         />
       </nuxt-link>
-      <div class="text-right pr-8 2lg:hidden flex justify-end " @click="toggle">
+      <div class="text-right pr-8 2lg:hidden flex justify-end cursor-pointer " @click="toggle">
         <i class="fas fa-bars h-8 w-8" />
       </div>
       <!-- navigation -->
@@ -52,8 +52,8 @@
           />
         </nuxt-link>
         <!-- hamburger icon -->
-        <div class="w-full h-full pr-8 2lg:hidden flex justify-end " @click="toggle">
-          <i class="fas fa-bars h-8 w-8 z-50 place-self-center" />
+        <div class="w-full h-full pr-8 2lg:hidden flex justify-end cursor-pointer" @click="toggle">
+          <i class="fas fa-xmark h-10 w-8 z-50 place-self-center" />
         </div>
       </div>
       <!-- liens -->
