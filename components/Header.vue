@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-zinc-900 lg:h-40 w-full z-20 sticky top-0 fade-scroll" :class="{ visible: isVisible }">
+  <header class="bg-zinc-900 lg:h-24 w-full z-20 sticky top-0 fade-scroll" :class="{ visible: isVisible }">
     <nav
       class="2lg:max-h-40 max-h-20 SamsungGA425G:max-h-24 w-full py-4 2lg:py-6 grid grid-cols-2 grid-rows-1 2lg:grid-cols-3 items-center justify-between 2lg:border-none bg-zinc-900"
       aria-label="Top"

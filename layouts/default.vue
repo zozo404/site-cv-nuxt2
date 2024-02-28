@@ -22,4 +22,7 @@ html{
 .fade-scroll.visible {
   opacity: 1;
 }
+.flex-di-initial{
+  flex-direction: initial;
+}
 </style>
