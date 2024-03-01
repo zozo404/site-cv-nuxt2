@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div>
-    <DescriptionMe class="scroll-mt-60 lg:scroll-mt-40 py-10" />
+    <DescriptionMe class="scroll-mt-60 lg:scroll-mt-40 py-10 2lg:py-20" />
     <Titles :id="'presentation'" class="scroll-mt-60 lg:scroll-mt-40" subtitle="Présentation" />
     <PresentationMe class="scroll-mt-60 lg:scroll-mt-40 pb-10" />
     <Titles :id="'competences'" subtitle="Compétences" class="scroll-mt-60 lg:scroll-mt-40" />
