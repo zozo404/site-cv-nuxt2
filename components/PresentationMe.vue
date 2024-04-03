@@ -36,7 +36,7 @@ export default {
         link: [
           {
             name: 'Télécharger CV',
-            href: '/CV-CUNY_Enzo.pdf'
+            href: '/CV-CUNY-Enzo–BTS-SIO-SISR.pdf'
           },
           {
             name: 'Mon Github',
