@@ -57,6 +57,13 @@ export default {
       parks: [
         {
           status: true,
+          name: 'BTS SIO SISR',
+          speciality: "Solution d'Infrastructure Système et Réseau",
+          year: "2024 - Aujourd'hui",
+          location: 'Lycée Marillac - Perpignan'
+        },
+        {
+          status: true,
           name: 'Développement Web et Web mobile',
           speciality: 'Formation Osengo',
           year: '2022',
@@ -75,13 +82,6 @@ export default {
           speciality: 'Sciences et Technologies de Laboratoires (SPCL)',
           year: '2019',
           location: 'Lycée Aristide Maillol - Perpignan'
-        },
-        {
-          status: true,
-          name: 'Brevet des Collèges',
-          speciality: 'Brevet Général',
-          year: '2016',
-          location: 'Collège le Ribéral - Saint-Estève'
         }
 
       ]
