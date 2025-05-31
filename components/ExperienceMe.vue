@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-wrap justify-evenly my-5 fade-scroll" :class="{ visible: isVisible }">
     <!-- for loop to show my professional experiences (internships in companies) -->
-    <div v-for="exp in exps" :key="exp._id" class="flex w-4/5 md:w-auto">
+    <div v-for="exp in exps" :key="exp._id" class="flex w-4/5 md:w-5/12 lg:w-2/5 xl:max-w-md">
       <div class="border border-1 border-orange-400 rounded-md text-center mb-3 w-full p-8 gap-4 flex flex-col items-center justify-evenly">
         <p>{{ exp.year }}</p>
         <a class="flex justify-center" :href="exp.link" target="_blank" rel="noopener">
@@ -9,7 +9,7 @@
             :src="exp.imageId.asset._ref"
             provider="sanity"
             placeholder
-            class="w-12 py-2"
+            class="w-12 lg:w-20 py-2"
             :alt="exp.imageId.alt"
           />
         </a>

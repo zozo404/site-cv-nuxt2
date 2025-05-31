@@ -16,7 +16,7 @@
         </a>
       </div>
       <p class="mt-8 text-center text-base text-gray-400">
-        &copy; 2022 zozoy, Inc. All rights reserved.
+        &copy; {{ currentYear }} zozoy, Inc. All rights reserved.
       </p>
     </div>
   </footer>
@@ -30,6 +30,7 @@ export default {
   mixins: [scrollFadeMixin],
   data () {
     return {
+      currentYear: new Date().getFullYear(),
       navigation: {
         social: [
           {
