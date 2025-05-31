@@ -2,7 +2,7 @@
   <div v-if="portfolio">
     <div class="flex flex-col items-center mt-10 gap-4 fade-scroll" :class="{ visible: isVisible }">
       <div class="cursor-pointer" @click="goBack">
-        <h1 class="pl-2 py-3">
+        <h1 class="pl-2 2lg:pt-8">
           <i class="fa-solid fa-arrow-left" />
           Retour
         </h1>
