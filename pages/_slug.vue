@@ -26,7 +26,7 @@
           {{ portfolio.text }}
         </p>
         <br>
-        <div class="md:flex justify-around flex-wrap">
+        <div v-if="portfolio.informatique == 'Developpement'" class="md:flex justify-around flex-wrap">
           <p>
             Vous pouvez accéder au github du projet <br>
             <a :href="portfolio.link" target="_blank" rel="noopener" class="text-orange-400 text-lg">Ici</a>
